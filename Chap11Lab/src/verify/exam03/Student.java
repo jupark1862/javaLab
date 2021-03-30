@@ -12,7 +12,7 @@ public class Student {
 	}
 
 	@Override
-	public String hashCode() {
+	public int hashCode() {
 		// TODO Auto-generated method stub
 		return studentNum;
 	}
