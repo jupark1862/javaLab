@@ -13,14 +13,19 @@ public class Student {
 
 	@Override
 	public int hashCode() {
-		// TODO Auto-generated method stub
-		return studentNum;
+		return studentNum.hashCode();
 	}
 
 	@Override
 	public boolean equals(Object obj) {
-		// TODO Auto-generated method stub
-		return super.equals(obj);
+
+		if (obj instanceof Student) {
+			Student student = (Student) obj;
+			if (studentNum.equals(getStudentNum())) {
+				return true;
+			}
+		}
+		return false;
 	}
 
 }
